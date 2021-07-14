@@ -128,8 +128,8 @@ input::placeholder {
 }
 .efeito {
   position: absolute;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   background-image: url("/img/planets.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -192,6 +192,17 @@ input::placeholder {
   }
   .container {
     justify-content: center;
+  }
+  .efeito {
+    position: absolute;
+    height: 105%;
+    width: 120%;
+    background-image: url("/img/planets.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto auto;
+    animation: planetas 20s ease-in-out infinite;
   }
 }
 @media only screen and (max-width: 700px) {
