@@ -3,65 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="imagex/png" href="./img/icon.png" />
-    <title>Tec friday</title>
+    <title>TecFriday</title>
   </head>
   <body>
-    <div class="tag">
-      <img src="./img/fio.png" alt="Cordão para segurar o ticket" />
-      <img
-        src="./img/icon.png"
-        alt="Ticket com os seguintes textos: TecFriday, 70% Microtec"
-      />
-    </div>
     <div class="container">
-      <p>Super</p>
-      <p>Descontos</p>
-      <p>
-        Uma semana pensada em você produtos com até 70% off
-        <br /><br />
-        Não fique de fora! Receba agora nosso catálogo
-      </p>
-      <form action="/" method="post">
-        <input type="text" name="email" placeholder="Digite seu melhor email" />
-        <button type="submit">
-          <img src="img/sendcl.png" alt="Icone de enviar" />
-        </button>
-      </form>
-      <p>Termina em:</p>
-      <div class="contador">
-        <ul>
-          <li>
-            <p>Dias</p>
-            <div class="box"><p>3</p></div>
-          </li>
-          <li>
-            <p>Horas</p>
-            <div class="box"><p>3</p></div>
-          </li>
-          <li>
-            <p>Minutos</p>
-            <div class="box"><p>3</p></div>
-          </li>
-          <li>
-            <p>Segundos</p>
-            <div class="box"><p>3</p></div>
-          </li>
-        </ul>
+      <div class="box">
+        <div class="text">
+          <p>PREPARE-SE PARA A MAIOR SEMANA DE DESCONTOS EM</p>
+          <p>TECNOLOGIA</p>
+          <p>
+            Cadastre-se e receba promoções em primeira mão e descontos
+            exclusivos
+          </p>
+        </div>
+        <form action="/" method="post">
+          <label for="Apelido">Apelido</label><br />
+          <input
+            type="text"
+            name="email"
+            placeholder="Digite como deseja ser chamade"
+          /><br />
+          <label for="Email">Email</label><br />
+          <input
+            type="text"
+            name="email"
+            placeholder="Digite seu melhor email"
+          /><br />
+          <div>
+            <input type="checkbox" value="ReciveNews" checked />
+            <label class="news" for="ReciveNews">
+              Quero receber atualizações semanais</label
+            >
+          </div>
+
+          <button type="submit">Confirmar envio</button>
+        </form>
+      </div>
+      <div class="tag">
+        <img src="/img/corda.png" alt="corda do ticket" />
+        <img src="/img/tag.png" alt="ticket TecFriday 70% off da Microtec " />
       </div>
     </div>
   </body>
