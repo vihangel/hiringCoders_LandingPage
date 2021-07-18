@@ -158,6 +158,14 @@ button > img {
     transform: translateX(0px);
   }
 }
+@keyframes ladinho {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
 
 @keyframes rotaciona {
   0% {

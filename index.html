@@ -15,6 +15,31 @@
     <title>TecFriday</title>
   </head>
   <body>
+    <script>
+      function store() {
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault(); // <--- isto pára o envio da form
+        });
+
+        var name = document.querySelector("#name");
+        var email = document.querySelector("#email");
+        if (
+          name.value != null &&
+          name.value != "" &&
+          email.value != null &&
+          email.value != ""
+        ) {
+          localStorage.setItem("name", name.value);
+          localStorage.setItem("email", name.email);
+          alert(name.value + " seu email foi cadastrado com sucesso!");
+          location.reload();
+        } else {
+          alert("Todos os campos devem ser completados");
+        }
+        return;
+      }
+    </script>
     <div class="efeito"></div>
     <div class="container">
       <div class="box">
@@ -26,27 +51,31 @@
             exclusivos
           </p>
         </div>
-        <form action="/" method="post">
+        <form>
           <label for="Apelido">Apelido</label><br />
           <input
             type="text"
-            name="email"
+            id="name"
+            name="nome"
             placeholder="Digite como deseja ser chamade"
           /><br />
           <label for="Email">Email</label><br />
           <input
             type="text"
             name="email"
+            id="email"
             placeholder="Digite seu melhor email"
           /><br />
           <div>
-            <input type="checkbox" value="ReciveNews" checked />
+            <input type="checkbox" id="news" value="ReciveNews" checked />
             <label class="news" for="ReciveNews">
               Quero receber atualizações semanais</label
             >
           </div>
 
-          <button type="submit">Confirmar envio</button>
+          <button type="submit" id="salvar" onclick="store();">
+            Confirmar envio
+          </button>
         </form>
       </div>
       <div class="tag">

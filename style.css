@@ -23,13 +23,11 @@ html {
 }
 
 body {
+  position: relative;
   background-color: var(--background);
-  /*background-image: url("/img/planets.png");*/
-  background-repeat: no-repeat;
-  background-size: contain;
   text-align: left;
   -webkit-font-smoothing: antialiased;
-  width: 100%;
+  width: 100fr;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -127,6 +125,7 @@ input::placeholder {
   height: 500px;
 }
 .efeito {
+  overflow: hidden;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -139,7 +138,7 @@ input::placeholder {
 }
 /*=== Animation === */
 .tag > img:nth-child(2):hover {
-  animation: rotaciona 5s ease-out infinite;
+  animation: rotaciona 1.5s ease-out infinite;
 }
 
 .container {
@@ -195,7 +194,7 @@ input::placeholder {
   }
   .efeito {
     position: absolute;
-    height: 105%;
+    height: 120%;
     width: 120%;
     background-image: url("/img/planets.png");
     background-repeat: no-repeat;
