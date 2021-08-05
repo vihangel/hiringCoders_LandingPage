@@ -8,4 +8,4 @@ Apelido: Digite como deseja ser chamade
 Email: Digite seu melhor email
 Checkbox Quero receber atualizações semanais
 e um botão para enviar"/>
-<a href="https://60ede1c0b58d9d3ece924774--inspiring-payne-e751e0.netlify.app/"> Acessar a pagina </a>
+<a href="https://inspiring-payne-e751e0.netlify.app/"> Acessar a pagina </a>
